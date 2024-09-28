@@ -1,0 +1,659 @@
+/*Estrutura basica da página
+******************************/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 0.92em;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+.container{
+    width: 80%;
+    max-width: 90%;
+    margin: auto;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(133, 133, 133);
+}
+
+/*Cabeçalho
+******************************/
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    box-shadow: 0px 0px 3px  3px  rgba(0, 0, 0, 0.151);
+    background-color: #FFF;
+}
+
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.1em 0;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    gap: 3em;
+}
+
+a.active{
+    color: blue;
+}
+
+nav a{
+    font-size: 1.15em;
+    font-weight: 600;
+}
+
+nav a:hover{
+    color: blue;
+    transition: 300ms;
+}
+
+nav button{
+    background: linear-gradient(124deg, rgba(0,0,0,1) 50%, rgba(255,255,255,1) 51%);
+    text-transform: none;
+    border: 2px solid black;
+}
+
+nav button:hover{
+    background: linear-gradient(124deg, rgba(255,255,255,1) 51%, rgba(0,0,0,1) 50% );
+    transition: 250ms;
+    color: black;
+}
+
+nav button span{
+    color: black;
+}
+
+nav button:hover span{
+    color: white;
+    transition: 250ms;
+}
+
+#logo img{
+    width: 45px;
+    height: 45px;
+    
+}
+
+.blue{
+    color: blue;
+}
+
+.blue:hover{
+    color: blue;
+}
+
+/*Seção Perfil
+******************************/
+section#perfil{
+    padding-top: 6em;
+    max-width: 100%;
+    border-bottom: 1px solid rgb(212, 212, 212);
+}
+
+section#perfil .container{
+    overflow-y: hidden;
+    height: 83vh;
+    max-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#textos{
+    margin-top: 8em;
+}
+
+#textos h1{
+    padding-bottom: 0.15em;
+    font-size: 4.5em;
+    color: rgb(51, 51, 51);
+}
+
+#textos span{
+    font-size: 1.8em;
+    color: rgb(110, 110, 110);
+    font-weight: 600;
+    padding-left: 0.2em;
+}
+
+#textos p{
+    font-size: 1.6em;
+    padding-left: 0.2em;
+}
+
+#botoes{
+    padding: 1em 0.3em;
+    margin-top: 1em;
+}
+
+button{
+    border-radius: 2em;
+    padding: 1em 1.5em;
+    margin-right: 0.5em;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    border: none;
+    text-transform: uppercase;
+    font-size: 1em;
+}
+
+#botoes #cv{
+    background-color: rgba(0, 0, 0, 0.767);
+    border: 1px solid white;
+}
+
+#botoes #cv:hover{
+    background-color: black;
+    transition: 350ms;
+}
+
+#botoes #fale{
+    background-color: rgba(0, 0, 255, 0.76);
+    border: 1px solid white;
+}
+
+#botoes #fale:hover{
+    background-color: blue;
+    transition: 350ms;
+}
+
+#foto{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    height: 100%;
+}
+
+#foto img{
+    max-width: 500px;
+    height: 100%;
+}
+
+#links{
+    padding-top: 1em;
+    display: flex;
+    gap: 0.8em;
+}
+
+#links a{
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    border: 2px solid rgba(0, 0, 255, 0.76);
+}
+
+#links a i{
+    color: rgba(0, 0, 255, 0.76);
+    font-size: 1.3em;
+}
+
+#links a:hover i{
+    color: white;
+    transition: 350ms;
+}
+
+#links a:hover{
+    background-color: rgba(0, 0, 255, 0.76);
+    transition: 350ms;
+    animation: 0.5s translate alternate infinite;
+}
+
+/*Seção Sobre
+******************************/
+section#sobre{
+    max-width: 100%;
+    padding: 6em 0  4em;
+}
+
+.center{
+    text-align: center;
+    color: gray;
+    font-size: 1.5em;
+}
+
+section#sobre .container{
+    padding: 4em 0;
+    display: flex;
+    align-items: start;
+}
+
+
+#img-sobre{
+    min-width: 280px; 
+}
+
+#img-sobre img{
+    width:100%;
+    height: 280px;
+}
+
+#texto-sobre{
+    margin: 0 2em;
+    width: 100%; 
+    text-align: left;
+}
+
+#texto-sobre h2{
+    font-size: 2em;
+    font-weight: 600;
+    padding-bottom: 0.3em;
+}
+
+#texto-sobre span{
+    font-size: 1.2em;
+    color: gray;
+}
+
+#texto-sobre p{
+    color: rgb(94, 94, 94);
+    font-size: 1.2em;
+    letter-spacing: 0.1em;
+}
+
+#texto-sobre button{
+    background-color: rgba(0, 0, 255, 0.76);
+    margin-top: 1em;
+}
+
+#texto-sobre button:hover{
+    background-color: blue;
+    transition: 350ms;
+}
+
+/*Seção Portfolio
+******************************/
+section#portfolio{
+    max-width: 100%;
+    padding: 6em 0 4em;
+}
+
+section#portfolio .container{
+    text-align: center;
+}
+
+#texto-port span{
+    font-size: 1.5em;
+    color: gray;
+}
+
+#texto-port #titulo{
+    display: block;
+    padding: 0em 0 0.6em;
+    font-size: 2.5em;
+    color: rgb(49, 49, 49);
+    font-weight: bold;
+}
+
+#texto-port p{
+    color: rgb(94, 94, 94);
+    font-size: 1.2em;
+    letter-spacing: 0.05em;
+    padding-bottom: 0.5em;
+}
+
+#projetos{
+    margin-top: 4em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em;
+}
+
+.projetos{
+    grid-column: auto;
+}
+
+.img-projeto{
+    position: relative;
+    overflow: hidden;
+    margin: 0.5em 0.5em 1em;
+    border-radius: 0.5em;
+
+    box-shadow: 2px 3px 4px 2px rgba(0, 0, 0, 0.247);
+}
+
+.img-projeto img{
+    position: relative;
+    width: 100%;
+    z-index: 8;
+}
+
+.overlay{
+    background-color: #0000ffa1;
+    position: absolute;
+    z-index: 9;
+    left: 0;
+    bottom: 100%;
+	width: 100%;
+	height: 100%;
+    visibility: hidden;
+    opacity: 0;
+    border-radius: 0.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-projeto:hover .overlay{
+    bottom: 0;
+    visibility: visible;
+    opacity: 1;
+    transition: 0.4s;
+}
+
+.overlay-infos{
+    color: white;
+    font-size: 1.1em;
+    font-weight: bold;
+    overflow: hidden;
+    height: 70%;
+}
+
+
+.overlay-infos p{
+    margin-bottom: 1em;
+    font-size: 1.5em;
+}
+
+.overlay-infos a i{
+    color: white;
+    border-radius: 100%;
+    border: 2px solid white;
+    padding: 0.5em;
+
+}
+
+.overlay-infos a:hover i{
+    color: #0000ffcc;
+    background-color: white;
+    transition: 350ms;
+}
+
+/*Contatos e Rodapé
+******************************/
+footer{
+    max-width: 100%;
+    padding: 4em 0 2em;
+    margin-top: 8em;
+    background-color: black;
+    color: white;
+    border-top: 1px solid rgb(212, 212, 212);
+}
+
+footer .container{
+    text-align: center;
+    position: relative;
+}
+
+#titulo-contatos p{
+    color: gray;
+    font-size: 1.5em;
+    margin: 1em 0;
+}
+
+#titulo-contatos h2{
+    font-size: 2.5em;
+    margin-bottom: 1.8em;
+}
+
+#contatos{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 3em;
+}
+
+.contato{
+    font-weight: bold;
+    width: 30%;
+    z-index: 75;
+}
+
+.contato p{
+    margin: 1em;
+    font-size: 1em;
+}
+
+.contato a i{
+    color: white;
+    border-radius: 100%;
+    border: 2px solid white;
+    padding: 1em;
+    font-size: 2em;
+    background-color: black;
+}
+
+.contato a:hover i{
+    color: #0000ffcc;
+    background-color: white;
+    transition: 350ms;
+}
+
+.borda{
+    border: 1px solid white;
+    margin-top: 3em;
+    position: absolute;
+    width: 60%;
+}
+
+#redes h2{
+    margin-top: 1em;
+}
+
+.redes{
+    padding-top: 2em;
+    display: flex;
+    justify-content: center;
+    gap: 0.8em;
+}
+
+.redes a{
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    border: 2px solid rgba(0, 0, 255, 0.76);
+}
+
+.redes a i{
+    color: rgba(0, 0, 255, 0.76);
+    font-size: 1.3em;
+}
+
+.redes a:hover i{
+    color: white;
+    transition: 350ms;
+}
+
+.redes a:hover{
+    background-color: rgba(0, 0, 255, 0.76);
+    transition: 350ms;
+    animation: 0.5s translate alternate infinite;
+}
+
+#rodape{
+    margin-top: 3em;
+    border-top: 1px solid white;
+}
+#rodape p{
+    margin-top: 1em;
+    font-size: 1.2em;
+}
+
+/*Animações
+********************************/
+@keyframes translate {
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(-8px);
+    }
+    
+}
+
+#hamburguer{
+    display: none;
+}
+
+/*Responsividade
+******************************/
+
+@media (max-width: 768px){
+
+    .container{
+        width: 100%;
+    }
+
+    button{
+        font-size: 0.8em;
+    }
+
+    /*Cabeçalho*/
+
+    header .container{
+        flex-direction: column;
+    }
+
+    nav{
+        display: none;    
+        flex-direction: column;
+        font-size: 0.85em;
+    }
+    
+    .navbar{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #hamburguer{
+        display: flex;
+        font-size: 1.95em;
+    }
+
+    /*Perfil*/
+    section#perfil{
+        padding-top: 0em;
+    }
+
+    section#perfil .container{
+        width: 100%;
+        height: 95vh;
+    }
+
+    #foto{
+        display: none;
+    }
+
+    /*Sobre*/
+    section#sobre{
+        max-width: 100%;
+        padding: 6em 0  2em;
+        text-align: center;
+    }
+    
+    section#sobre .container{
+        padding: 4em 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    #img-sobre{
+        width: 100%;
+    }
+
+    #img-sobre img{
+        width: 100%;
+    }
+
+    #texto-sobre {        
+        margin-top: 2em;
+        padding: 0em;
+        font-size: 0.9em;
+    }
+
+    /*Portifolio*/
+    #texto-port #titulo{
+        font-size: 2em;
+    }
+    
+    #texto-port p{
+        color: rgb(94, 94, 94);
+        font-size: 1.1em;
+        letter-spacing: 0.05em;
+        padding-bottom: 0.5em;
+    }
+
+    
+    #projetos{
+        margin-top: 4em;
+        display: flex;
+        flex-direction: column;
+        gap: 0em;
+    }
+
+    .img-projeto{
+        margin-bottom: 3.5em;
+    }
+
+    .img-projeto img{
+        height: 350px;
+    }
+
+    /*rodape*/
+    #titulo-contatos h2{
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 908px){
+    button{
+        font-size: 0.8em;
+    }
+}
+
+
+/*Modo dark*/
+
+.light{
+    background-color: #fff;
+}
+
+.dark{
+    background-color: black;
+}
+
+.box-light{
+    box-shadow: 0px 0px 3px  3px  rgba(255, 255, 255, 0.181);
+}
+
+.text-white{
+    color: white;
+}
