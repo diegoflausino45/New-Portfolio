@@ -32,7 +32,7 @@ a{
 ******************************/
 header{
     width: 100%;
-    position: fixed;
+    position: sticky;
     top: 0;
     z-index: 99;
     box-shadow: 0px 0px 3px  3px  rgba(0, 0, 0, 0.151);
@@ -47,7 +47,7 @@ header .container{
 }
 
 nav{
-    display: flex;
+    display: flex ;
     align-items: center;
     gap: 3em;
 }
@@ -104,7 +104,6 @@ nav button:hover span{
 /*Seção Perfil
 ******************************/
 section#perfil{
-    padding-top: 6em;
     max-width: 100%;
     border-bottom: 1px solid rgb(212, 212, 212);
 }
@@ -282,6 +281,58 @@ section#sobre .container{
     background-color: blue;
     transition: 350ms;
 }
+
+
+/*Seção Habilidades
+******************************/
+section#habilidades{
+    max-width: 100%;
+    padding: 6em 0 4em;
+}
+
+.skills{
+    margin: 6em 0;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+
+.skills-slide{
+    display: inline-block;
+    animation: 10s slide infinite linear;
+}
+
+.img-skill{
+    display: inline-block;
+}
+
+.img-skill p{
+    padding-top: 1em;
+    text-align: center;
+    color: gray;
+    font-size: 1.2em;
+}
+
+.skills:hover .skills-slide{
+    animation-play-state: paused;
+}
+
+.skills-slide .img-skill img{
+    height: 75px;
+    margin: 0 5em;
+}
+
+@keyframes slide {
+    from{
+        transform: translateX(0);
+    }
+
+    to{
+        transform: translateX(-100%);
+    }
+    
+}
+
 
 /*Seção Portfolio
 ******************************/
@@ -540,7 +591,7 @@ footer .container{
     }
 
     nav{
-        display: none;    
+        display: none ;    
         flex-direction: column;
         font-size: 0.85em;
     }
@@ -597,6 +648,11 @@ footer .container{
         margin-top: 2em;
         padding: 0em;
         font-size: 0.9em;
+    }
+
+    /*SKILLS*/
+    .skills-slide .img-skill img{
+        margin: 0 2em;
     }
 
     /*Portifolio*/

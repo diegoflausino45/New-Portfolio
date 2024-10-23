@@ -47,7 +47,6 @@ darkMode.addEventListener('click', function(){
         NomePerfil.style.color = "rgb(51, 51, 51)"
         TextoPort.style.color = "rgb(51, 51, 51)"
         darkMode.style.borderColor = "black"
-
-
+        hamburguer.style.color = 'black'
     }
 })
