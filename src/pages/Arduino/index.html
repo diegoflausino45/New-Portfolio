@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Meu portfólio">
+    <meta property="og:description" content="Venha ver meus projetos!!!">
+    <meta property="og:image" content="https://new-portfolio-sigma-ten.vercel.app/assets/download (1).png">
+
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+</head>
+<body id="principal" class="light">
+
+    <header id="header">
+        <div class="container">
+            <div class="navbar">
+                <a href="/index.html" id="logo">
+                    <img src="/assets/icons8-óculos-64 (1).png" alt="">
+                </a>
+
+                <div id="hamburguer" class="hamburguer">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+
+            <h1 id="titulo-projeto">Circuito em Arduino</h1>
+
+            <div class="menu">     
+                <nav id="navegacao">
+                    
+                    <button id="Dark">Light...<span>...Dark</span></button>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section id="Arduino">
+        <div class="container">
+
+            <div class="projeto-info">
+                <p>
+                    Desenvolvido na disciplina de Programação Orientada a Objetos Avançada, ministrada pelo professor Alciano Gustavo Genovez de Oliveira, o projeto do piano elétrico teve como objetivo criar um sistema interativo para reprodução de notas musicais utilizando a plataforma Arduino. Inicialmente, o circuito foi projetado e testado no Tinkercad, uma ferramenta que permitiu simular o funcionamento e validar o código antes de transferi-lo para o hardware real. Após essa etapa, o código foi implementado em um Arduino físico, onde ajustes finais foram realizados para garantir a funcionalidade em um ambiente real. O projeto buscou explorar a integração entre hardware e software, promovendo aprendizado prático e o desenvolvimento de habilidades em eletrônica e programação.
+                </p>
+            </div>
+
+            <div class="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item">
+                        <img src="/assets/Arduino/Arduino01.png" alt="Tela do projeto 1">
+                        <p class="legenda">Projeto Piano Eletrico</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/assets/Arduino/Arduino02.png" alt="Tela do projeto 2">
+                        <p class="legenda">Declaração de Variáveis e Função Setup()</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/assets/Arduino/Arduino03.png" alt="Tela do projeto 3">
+                        <p class="legenda">Função Loop() e Condições para emitir as notas</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/assets/Arduino/Arduino04.png" alt="Tela do projeto 4">
+                        <p class="legenda">Função Delay()</p>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button id="prev"><</button>
+                    <button id="next">></button>
+                </div>
+            </div>
+
+            <div class="projeto-info">
+                <h1>Componentes Utilizadas</h1>
+                <p>
+                    O projeto do piano elétrico utilizou a plataforma Arduino Uno como controlador central para processar o código e gerenciar os sinais de entrada e saída. Um buzzer foi empregado para emitir frequências correspondentes às notas musicais, transformando sinais elétricos em ondas sonoras. As teclas foram representadas por botões conectados à placa do Arduino, cada um associado a uma frequência específica para gerar as notas desejadas. Essa combinação de componentes e a transição do ambiente virtual para o físico permitiram um desenvolvimento eficiente, proporcionando aprendizado prático em música e eletrônica.
+                </p>
+
+                <h1>Funcionalidades</h1>
+                <p>
+                    O projeto do piano elétrico com Arduino implementa funcionalidades que permitem ao usuário reproduzir sons distintos através de botões conectados à placa. Cada botão é mapeado a um pino digital do Arduino e associado a uma frequência específica. O buzzer, conectado ao pino 13, emite os sons das notas musicais.
+                    No setup(), os pinos dos botões são configurados como entradas para detectar pressionamentos, enquanto o pino do buzzer é configurado como saída para emitir os sons. Durante o loop(), o estado de cada botão é lido com digitalRead() e armazenado em variáveis. Quando um botão é pressionado, a função tone() é chamada para gerar o som correspondente no buzzer, utilizando frequências que variam de 300 Hz a 1000 Hz, representando notas em tons crescentes.
+                    Um pequeno intervalo de 10 ms, inserido com delay(10), garante a suavidade na leitura dos botões e melhora a experiência de interação. Esse sistema permite criar um piano básico, onde cada tecla é representada por um botão, proporcionando uma experiência prática e interativa de aprendizado.
+                </p>
+
+
+                <h1>Conclusão</h1>
+                <p>
+                    O projeto do piano elétrico com Arduino integrou eletrônica e música, utilizando componentes simples como o Arduino Uno, botões e um buzzer para reproduzir notas musicais de forma interativa. Além de reforçar o aprendizado técnico em eletrônica e programação, o projeto destacou o potencial criativo do Arduino, servindo como base para futuros aprimoramentos, como a expansão de notas e inclusão de efeitos sonoros.
+                </p>
+            
+        </div>
+    </section>
+
+
+
+
+    <footer id="contato">
+        <div class="container">
+            <div id="titulo-contatos">
+                <p>Contato</p>
+                <h2>ENTRE EM CONTATO</h2>
+            </div>
+            <div id="contatos">
+                <div class="contato">
+                    <a href="https://maps.app.goo.gl/vUGNziX7Lg1rtPvY9" target="_blank"><i class="fa-solid fa-location-dot"></i></a>
+                    <p>Endereço </p>
+                </div>
+                <div class="contato">
+                    <a href="https://api.whatsapp.com/send/?phone=14997754810" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                    <p>(14) 99775-4810</p>
+                </div>
+                <div class="contato">
+                    <a href="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWrRrlqzStKQgjTdpLlQPDffCPmfLZmfPLbnVHLNqwMVRpGwPzFJMSTGfwzzTTlkPPvCHZbQB" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+                    <p>diegocflausino@gmail.com</p>
+                </div>
+                <div class="borda"></div>
+            </div>
+            <div id="redes">
+                <h2>Redes Sociais</h2>
+                <div class="redes">
+                    <a href="https://github.com/diegoflausino45" target="_blank"><i class="fa-brands fa-github-alt"></i></a>
+                    <a href="https://www.linkedin.com/in/diego-flausino/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <div id="rodape">
+                <p>© 2024 Todos os direitos reservados. Por Diego Flausino.</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <script src="/js/script.js"></script>
+    <script src="/src/pages/Arduino/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Meu portfólio">
+    <meta property="og:description" content="Venha ver meus projetos!!!">
+    <meta property="og:image" content="https://new-portfolio-sigma-ten.vercel.app/assets/download (1).png">
+
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+</head>
+<body id="principal" class="light">
+
+    <header id="header">
+        <div class="container">
+            <div class="navbar">
+                <a href="/index.html" id="logo">
+                    <img src="/assets/icons8-óculos-64 (1).png" alt="">
+                </a>
+
+                <div id="hamburguer" class="hamburguer">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+
+            <h1>Maciel's Coffe (Integração com API)</h1>
+
+            <div class="menu">     
+                <nav id="navegacao">
+                    
+                    <button id="Dark">Light...<span>...Dark</span></button>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section id="MacielsCoffe">
+        <div class="container">
+
+            <div class="projeto-info">
+                <p>
+                    O projeto é uma aplicação front-end desenvolvida para gerenciar produtos de 
+                    uma cafeteria de forma eficiente e prática. Ele integra-se com a API Macieuls Coffee 
+                    para realizar operações de listagem, busca, adição, edição e exclusão de produtos, 
+                    oferecendo uma experiência completa para gerenciamento de um inventário digital. 
+                    Abaixo estão os principais aspectos e funcionalidades do projeto:
+                </p>
+            </div>
+
+            <div class="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item">
+                        <img class="fluir" src="/assets/Maciels/maciels01.png" alt="Tela do projeto 1">
+                        <p class="legenda">Tela inicial do Projeto</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="fluir" src="/assets/Maciels/maciels02.png" alt="Tela do projeto 2">
+                        <p class="legenda">Modal para Adicionar Produto</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="fluir" src="/assets/Maciels/maciels03.png" alt="Tela do projeto 3">
+                        <p class="legenda">Modal para Editar Produto</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="fluir" src="/assets/Maciels/maciels04.png" alt="Tela do projeto 5">
+                        <p class="legenda">Modal para Excluir Produto</p>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button id="prev"><</button>
+                    <button id="next">></button>
+                </div>
+            </div>
+
+            <div class="projeto-info">
+                <h1>Linguagens e Tecnologias Utilizadas</h1>
+                <p>
+                    O projeto utilizou diversas tecnologias para desenvolver a interface e realizar a comunicação com a API. O HTML definiu a estrutura básica da página, enquanto o CSS e o Bootstrap garantiram uma aparência estilizada e responsiva, com componentes pré-estilizados que agilizaram o desenvolvimento. 
+                    No front-end, o JavaScript implementou a lógica de interação com a API e atualizações dinâmicas da página. A Fetch API foi usada para realizar operações CRUD com requisições HTTP, permitindo comunicação fluida entre front-end e back-end. Complementando, o jQuery facilitou a manipulação do DOM e a criação de interações rápidas.
+                </p>
+
+                <h1>Funcionalidades</h1>
+                <p>
+                    A aplicação permite gerenciar produtos com funcionalidades como listar, pesquisar, filtrar por categoria, adicionar, editar e excluir. Os produtos são exibidos organizados por categoria e ordem alfabética, com busca em tempo real e filtros específicos. A adição e edição usam formulários validados, enviando dados à API via requisições POST e PUT. A exclusão é segura, com confirmação antes de enviar uma requisição DELETE. Todas as operações são integradas à API Macieuls Coffee, utilizando autenticação por token e identificando produtos pelo ID, garantindo uma gestão eficiente do inventário.
+                </p>
+
+
+                <h1>Conclusão</h1>
+                <p>
+                    O projeto Macieuls Coffee demonstra as principais práticas e habilidades 
+                    envolvidas no desenvolvimento de aplicações de gerenciamento de inventário, 
+                    especialmente aquelas que envolvem integração com APIs. Ele reforça o uso de 
+                    tecnologias front-end e oferece um exemplo prático de como implementar CRUD, 
+                    desde a exibição e organização dos dados até a manipulação e atualização em tempo 
+                    real. O projeto não só aprimora as competências de desenvolvimento de interfaces 
+                    interativas e responsivas, mas também proporciona uma visão prática das etapas e 
+                    considerações necessárias para a construção de sistemas de gestão intuitivos e 
+                    eficientes. 
+                </p>
+            
+        </div>
+    </section>
+
+
+
+
+    <footer id="contato">
+        <div class="container">
+            <div id="titulo-contatos">
+                <p>Contato</p>
+                <h2>ENTRE EM CONTATO</h2>
+            </div>
+            <div id="contatos">
+                <div class="contato">
+                    <a href="https://maps.app.goo.gl/vUGNziX7Lg1rtPvY9" target="_blank"><i class="fa-solid fa-location-dot"></i></a>
+                    <p>Endereço </p>
+                </div>
+                <div class="contato">
+                    <a href="https://api.whatsapp.com/send/?phone=14997754810" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                    <p>(14) 99775-4810</p>
+                </div>
+                <div class="contato">
+                    <a href="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWrRrlqzStKQgjTdpLlQPDffCPmfLZmfPLbnVHLNqwMVRpGwPzFJMSTGfwzzTTlkPPvCHZbQB" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+                    <p>diegocflausino@gmail.com</p>
+                </div>
+                <div class="borda"></div>
+            </div>
+            <div id="redes">
+                <h2>Redes Sociais</h2>
+                <div class="redes">
+                    <a href="https://github.com/diegoflausino45" target="_blank"><i class="fa-brands fa-github-alt"></i></a>
+                    <a href="https://www.linkedin.com/in/diego-flausino/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <div id="rodape">
+                <p>© 2024 Todos os direitos reservados. Por Diego Flausino.</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <script src="/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+</body>
+</html>

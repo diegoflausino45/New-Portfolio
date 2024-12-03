@@ -4,7 +4,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow-x: hidden;
     scroll-behavior: smooth;
 }
 
@@ -23,16 +22,32 @@ body{
     margin: auto;
 }
 
+p{
+    color: rgb(94, 94, 94);
+}
+
 a{
     text-decoration: none;
     color: rgb(133, 133, 133);
 }
 
+
+button{
+    border-radius: 2em;
+    padding: 1em 1.5em;
+    margin-right: 0.5em;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    border: none;
+    text-transform: uppercase;
+    font-size: 1em;
+}
 /*Cabeçalho
 ******************************/
 header{
     width: 100%;
-    position: sticky;
+    position: fixed;
     top: 0;
     z-index: 99;
     box-shadow: 0px 0px 3px  3px  rgba(0, 0, 0, 0.151);
@@ -101,346 +116,6 @@ nav button:hover span{
     color: blue;
 }
 
-/*Seção Perfil
-******************************/
-section#perfil{
-    max-width: 100%;
-    border-bottom: 1px solid rgb(212, 212, 212);
-}
-
-section#perfil .container{
-    overflow-y: hidden;
-    height: 83vh;
-    max-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-#textos{
-    margin-top: 8em;
-}
-
-#textos h1{
-    padding-bottom: 0.15em;
-    font-size: 4.5em;
-    color: rgb(51, 51, 51);
-}
-
-#textos span{
-    font-size: 1.8em;
-    color: rgb(110, 110, 110);
-    font-weight: 600;
-    padding-left: 0.2em;
-}
-
-#textos p{
-    font-size: 1.6em;
-    padding-left: 0.2em;
-}
-
-#botoes{
-    padding: 1em 0.3em;
-    margin-top: 1em;
-}
-
-button{
-    border-radius: 2em;
-    padding: 1em 1.5em;
-    margin-right: 0.5em;
-    cursor: pointer;
-    color: white;
-    font-weight: bold;
-    border: none;
-    text-transform: uppercase;
-    font-size: 1em;
-}
-
-#botoes #cv{
-    background-color: rgba(0, 0, 0, 0.767);
-    border: 1px solid white;
-}
-
-#botoes #cv:hover{
-    background-color: black;
-    transition: 350ms;
-}
-
-#botoes #fale{
-    background-color: rgba(0, 0, 255, 0.76);
-    border: 1px solid white;
-}
-
-#botoes #fale:hover{
-    background-color: blue;
-    transition: 350ms;
-}
-
-#foto{
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    height: 100%;
-}
-
-#foto img{
-    max-width: 500px;
-    height: 100%;
-}
-
-#links{
-    padding-top: 1em;
-    display: flex;
-    gap: 0.8em;
-}
-
-#links a{
-    width: 45px;
-    height: 45px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 100%;
-    border: 2px solid rgba(0, 0, 255, 0.76);
-}
-
-#links a i{
-    color: rgba(0, 0, 255, 0.76);
-    font-size: 1.3em;
-}
-
-#links a:hover i{
-    color: white;
-    transition: 350ms;
-}
-
-#links a:hover{
-    background-color: rgba(0, 0, 255, 0.76);
-    transition: 350ms;
-    animation: 0.5s translate alternate infinite;
-}
-
-/*Seção Sobre
-******************************/
-section#sobre{
-    max-width: 100%;
-    padding: 6em 0  4em;
-}
-
-.center{
-    text-align: center;
-    color: gray;
-    font-size: 1.5em;
-}
-
-section#sobre .container{
-    padding: 4em 0;
-    display: flex;
-    align-items: start;
-}
-
-
-#img-sobre{
-    min-width: 280px; 
-}
-
-#img-sobre img{
-    width:100%;
-    height: 280px;
-}
-
-#texto-sobre{
-    margin: 0 2em;
-    width: 100%; 
-    text-align: left;
-}
-
-#texto-sobre h2{
-    font-size: 2em;
-    font-weight: 600;
-    padding-bottom: 0.3em;
-}
-
-#texto-sobre span{
-    font-size: 1.2em;
-    color: gray;
-}
-
-#texto-sobre p{
-    color: rgb(94, 94, 94);
-    font-size: 1.2em;
-    letter-spacing: 0.1em;
-}
-
-#texto-sobre button{
-    background-color: rgba(0, 0, 255, 0.76);
-    margin-top: 1em;
-}
-
-#texto-sobre button:hover{
-    background-color: blue;
-    transition: 350ms;
-}
-
-
-/*Seção Habilidades
-******************************/
-section#habilidades{
-    max-width: 100%;
-    padding: 6em 0 4em;
-}
-
-.skills{
-    margin: 6em 0;
-    overflow: hidden;
-    white-space: nowrap;
-}
-
-
-.skills-slide{
-    display: inline-block;
-    animation: 10s slide infinite linear;
-}
-
-.img-skill{
-    display: inline-block;
-}
-
-.img-skill p{
-    padding-top: 1em;
-    text-align: center;
-    color: gray;
-    font-size: 1.2em;
-}
-
-.skills:hover .skills-slide{
-    animation-play-state: paused;
-}
-
-.skills-slide .img-skill img{
-    height: 75px;
-    margin: 0 5em;
-}
-
-@keyframes slide {
-    from{
-        transform: translateX(0);
-    }
-
-    to{
-        transform: translateX(-100%);
-    }
-    
-}
-
-
-/*Seção Portfolio
-******************************/
-section#portfolio{
-    max-width: 100%;
-    padding: 6em 0 4em;
-}
-
-section#portfolio .container{
-    text-align: center;
-}
-
-#texto-port span{
-    font-size: 1.5em;
-    color: gray;
-}
-
-#texto-port #titulo{
-    display: block;
-    padding: 0em 0 0.6em;
-    font-size: 2.5em;
-    color: rgb(49, 49, 49);
-    font-weight: bold;
-}
-
-#texto-port p{
-    color: rgb(94, 94, 94);
-    font-size: 1.2em;
-    letter-spacing: 0.05em;
-    padding-bottom: 0.5em;
-}
-
-#projetos{
-    margin-top: 4em;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2em;
-}
-
-.projetos{
-    grid-column: auto;
-}
-
-.img-projeto{
-    position: relative;
-    overflow: hidden;
-    margin: 0.5em 0.5em 1em;
-    border-radius: 0.5em;
-
-    box-shadow: 2px 3px 4px 2px rgba(0, 0, 0, 0.247);
-}
-
-.img-projeto img{
-    position: relative;
-    width: 100%;
-    z-index: 8;
-}
-
-.overlay{
-    background-color: #0000ffa1;
-    position: absolute;
-    z-index: 9;
-    left: 0;
-    bottom: 100%;
-	width: 100%;
-	height: 100%;
-    visibility: hidden;
-    opacity: 0;
-    border-radius: 0.5em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.img-projeto:hover .overlay{
-    bottom: 0;
-    visibility: visible;
-    opacity: 1;
-    transition: 0.4s;
-}
-
-.overlay-infos{
-    color: white;
-    font-size: 1.1em;
-    font-weight: bold;
-    overflow: hidden;
-    height: 70%;
-}
-
-
-.overlay-infos p{
-    margin-bottom: 1em;
-    font-size: 1.5em;
-}
-
-.overlay-infos a i{
-    color: white;
-    border-radius: 100%;
-    border: 2px solid white;
-    padding: 0.5em;
-
-}
-
-.overlay-infos a:hover i{
-    color: #0000ffcc;
-    background-color: white;
-    transition: 350ms;
-}
 
 /*Contatos e Rodapé
 ******************************/
@@ -580,8 +255,25 @@ footer .container{
         width: 100%;
     }
 
+    .carousel-item img {
+        width: 100% ;
+    }
+    
+
+    .projeto-info{
+        margin-top: 1em !important;
+        width: 100% !important;
+        padding-top: 12em !important;
+        margin: 0 !important;
+        text-align: center !important;
+    }
+
+    .pi{
+        padding: 1em 0 !important;
+    }
+
     button{
-        font-size: 0.8em;
+        font-size: 0.8em !important;
     }
 
     /*Cabeçalho*/
@@ -619,7 +311,7 @@ footer .container{
     }
 
     #foto{
-        display: none;
+        display: none !important;
     }
 
     /*Sobre*/
@@ -652,46 +344,48 @@ footer .container{
 
     /*SKILLS*/
     .skills-slide .img-skill img{
-        margin: 0 2em;
+        margin: 0 2em !important;
     }
 
     /*Portifolio*/
     #texto-port #titulo{
-        font-size: 2em;
+        font-size: 2em !important;
     }
     
     #texto-port p{
-        color: rgb(94, 94, 94);
-        font-size: 1.1em;
-        letter-spacing: 0.05em;
-        padding-bottom: 0.5em;
+        color: rgb(94, 94, 94) !important;
+        font-size: 1.1em !important;
+        letter-spacing: 0.05em !important;
+        padding-bottom: 0.5em !important;
     }
 
     
     #projetos{
-        margin-top: 4em;
-        display: flex;
-        flex-direction: column;
-        gap: 0em;
+        margin-top: 4em !important;
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 0em !important;
     }
 
     .img-projeto{
-        margin-bottom: 3.5em;
+        margin-bottom: 3.5em !important;
     }
 
     .img-projeto img{
-        height: 350px;
+        height: 350px !important;
     }
 
     /*rodape*/
     #titulo-contatos h2{
-        font-size: 2em;
+        font-size: 2em !important;
     }
+
+
 }
 
 @media (max-width: 908px){
     button{
-        font-size: 0.8em;
+        font-size: 0.8em !important;
     }
 }
 
@@ -713,3 +407,6 @@ footer .container{
 .text-white{
     color: white;
 }
+
+
+

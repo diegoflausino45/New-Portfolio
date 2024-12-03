@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Meu portfólio">
+    <meta property="og:description" content="Venha ver meus projetos!!!">
+    <meta property="og:image" content="https://new-portfolio-sigma-ten.vercel.app/assets/download (1).png">
+
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+</head>
+<body id="principal" class="light">
+
+    <header id="header">
+        <div class="container">
+            <div class="navbar">
+                <a href="/index.html" id="logo">
+                    <img src="/assets/icons8-óculos-64 (1).png" alt="">
+                </a>
+
+                <div id="hamburguer" class="hamburguer">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+
+            <h1>Sistema De Livraria em C</h1>
+
+            <div class="menu">     
+                <nav id="navegacao">
+                    
+                    <button id="Dark">Light...<span>...Dark</span></button>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section id="Livraria">
+        <div class="container">
+
+            <div class="projeto-info">
+                <p>
+                    O projeto teve como objetivo desenvolver um sistema funcional que permite o cadastro, consulta, listagem e exclusão de dados relacionados a livros, autores, categorias e editoras. Utilizando a linguagem C, o sistema foi estruturado com o uso de structs e organizado de forma modular para facilitar a manutenção e evolução do código. Para garantir a persistência de dados entre execuções, foram utilizados arquivos binários com extensão .dat. O projeto foi desenvolvido como parte da disciplina de Estruturas de Dados, sob a orientação do professor Julio Fernando Lieira, durante o segundo bimestre, destacando-se pela aplicação prática de conceitos de programação e organização de dados.
+                </p>
+            </div>
+
+            <div class="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item">
+                        <img src="/assets/Livraria/Livraria01.png" alt="Tela do projeto 1">
+                        <p class="legenda">Interface do Sistema</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/assets/Livraria/Livraria02.png" alt="Tela do projeto 2">
+                        <p class="legenda">Função Setup()</p>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button id="prev"><</button>
+                    <button id="next">></button>
+                </div>
+            </div>
+
+            <div class="projeto-info pi">
+                <h1>Tecnólogias Utilizadas</h1>
+                <p>
+                    O projeto foi desenvolvido totalmente em C, utilizando as bibliotecas padrão 
+                    stdio.h e string.h para realizar operações de entrada e saída de dados e 
+                    manipulação de strings. Para garantir a persistência das informações entre as 
+                    20 
+                    execuções do programa, os dados são armazenados em arquivos binários com a 
+                    extensão .dat. Cada tipo de dado, como livros, clientes e vendas, é armazenado em 
+                    arquivos separados, e a organização dos arquivos é feita por meio de constantes 
+                    definidas com a diretiva #define, o que facilita a manutenção e a leitura do código, 
+                    além de tornar o processo de gerenciamento de dados mais eficiente.    
+                </p>
+
+                <h1>Funcionalidades</h1>
+                <p>
+                    O sistema foi projetado utilizando structs, que são estruturas de dados fundamentais para organizar e agrupar informações relacionadas em um único bloco, facilitando o gerenciamento de dados. Cada struct é composta por campos que representam atributos específicos de uma entidade. Por exemplo, uma struct para livros pode incluir atributos como título, autor e estoque, enquanto uma para clientes pode armazenar nome, contato e endereço. Essa abordagem permite agrupar dados logicamente relacionados, reduzindo a complexidade do código e tornando-o mais legível e eficiente.
+                    Com as structs como base, o sistema implementa funcionalidades como cadastro, onde as informações são preenchidas e associadas a uma struct antes de serem salvas; consulta e listagem, que percorrem os dados armazenados para exibir ou buscar registros específicos; e operações de alteração e exclusão, que atualizam ou removem informações diretamente dentro das estruturas ou nos arquivos onde estão persistidas. Essa arquitetura proporciona flexibilidade, modularidade e facilidade na manipulação e persistência de dados.
+                </p>
+
+
+                <h1>Conclusão</h1>
+                <p>
+                    Este projeto de livraria desenvolvido em C proporciona uma excelente 
+                    oportunidade para compreender os conceitos de programação estruturada, como o 
+                    uso de structs para organizar dados e a manipulação de arquivos binários para 
+                    persistência. A implementação das operações de CRUD (criação, leitura, atualização 
+                    e exclusão) permite uma gestão eficiente de livros, clientes, editoras e categorias, 
+                    enquanto as funções de relatório ajudam a analisar o desempenho de vendas e a 
+                    gestão de estoque.  
+                    O projeto não só atende aos requisitos de um sistema básico de gestão de livraria, 
+                    como também oferece uma base sólida para futuras melhorias, como a adição de 
+                    novos recursos ou a integração com interfaces gráficas. Em suma, é uma ferramenta 
+                    valiosa tanto para o desenvolvimento de habilidades em C quanto para a construção 
+                    de soluções práticas e funcionais. 
+                </p>
+            
+        </div>
+    </section>
+
+
+
+
+    <footer id="contato">
+        <div class="container">
+            <div id="titulo-contatos">
+                <p>Contato</p>
+                <h2>ENTRE EM CONTATO</h2>
+            </div>
+            <div id="contatos">
+                <div class="contato">
+                    <a href="https://maps.app.goo.gl/vUGNziX7Lg1rtPvY9" target="_blank"><i class="fa-solid fa-location-dot"></i></a>
+                    <p>Endereço </p>
+                </div>
+                <div class="contato">
+                    <a href="https://api.whatsapp.com/send/?phone=14997754810" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                    <p>(14) 99775-4810</p>
+                </div>
+                <div class="contato">
+                    <a href="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWrRrlqzStKQgjTdpLlQPDffCPmfLZmfPLbnVHLNqwMVRpGwPzFJMSTGfwzzTTlkPPvCHZbQB" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+                    <p>diegocflausino@gmail.com</p>
+                </div>
+                <div class="borda"></div>
+            </div>
+            <div id="redes">
+                <h2>Redes Sociais</h2>
+                <div class="redes">
+                    <a href="https://github.com/diegoflausino45" target="_blank"><i class="fa-brands fa-github-alt"></i></a>
+                    <a href="https://www.linkedin.com/in/diego-flausino/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <div id="rodape">
+                <p>© 2024 Todos os direitos reservados. Por Diego Flausino.</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <script src="/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+</body>
+</html>

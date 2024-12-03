@@ -18,6 +18,7 @@ darkMode.addEventListener('click', function(){
     const TextoPerfil = document.getElementById("textos")
     const NomePerfil = document.getElementById("nome-perfil")
     const TextoPort = document.getElementById("titulo")
+    const projetoinfo = document.querySelectorAll("h1")
 
     if(body.classList.contains("light")){
         body.classList.add('dark')
@@ -28,6 +29,7 @@ darkMode.addEventListener('click', function(){
 
         TextoSobre.classList.add('text-white')
         TextoPerfil.classList.add('text-white')
+        projetoinfo.classList.add('text-white')
         NomePerfil.style.color = "white"
         TextoPort.style.color = "white"
         darkMode.style.borderColor = "white"
@@ -44,9 +46,30 @@ darkMode.addEventListener('click', function(){
 
 
         TextoPerfil.classList.remove('text-white')
+        projetoinfo.classList.remove('text-white')
         NomePerfil.style.color = "rgb(51, 51, 51)"
         TextoPort.style.color = "rgb(51, 51, 51)"
         darkMode.style.borderColor = "black"
         hamburguer.style.color = 'black'
     }
 })
+
+let index = 0;  
+
+    const items = document.querySelectorAll('.carousel-item');  
+    const totalItems = items.length;  
+
+    document.getElementById('next').addEventListener('click', () => {  
+        index = (index + 1) % totalItems;  
+        updateCarousel();  
+    });  
+
+    document.getElementById('prev').addEventListener('click', () => {  
+        index = (index - 1 + totalItems) % totalItems;  
+        updateCarousel();  
+    });  
+
+    function updateCarousel() {  
+        const newTransform = `translateX(-${index * 100}%)`;  
+        document.querySelector('.carousel-inner').style.transform = newTransform;  
+    }  

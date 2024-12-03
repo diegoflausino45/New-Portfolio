@@ -8,6 +8,11 @@
     <meta property="og:description" content="Venha ver meus projetos!!!">
     <meta property="og:image" content="https://new-portfolio-sigma-ten.vercel.app/assets/download (1).png">
 
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
@@ -15,6 +20,7 @@
 
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
     <title>Portfolio</title>
 </head>
 <body id="principal" class="light">
@@ -53,7 +59,7 @@
                     <p>Programador Web</p>
                 </div>
                 <div id="botoes">
-                    <a href="">
+                    <a  href="https://api.whatsapp.com/send/?phone=14997754810" target="_blank">
                         <button class="btn" id="fale">
                             Fale Comigo
                         </button>
@@ -67,8 +73,8 @@
                 <div id="links">
                     <a href="https://github.com/diegoflausino45" target="_blank"><i class="fa-brands fa-github-alt"></i></a>
                     <a href="https://www.linkedin.com/in/diego-flausino/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/diegovinicius.consentinoflausino?locale=pt_BR" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/diego_flausino/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
                 </div>
             </div>
             <div id="foto">
@@ -81,13 +87,14 @@
         <p class="center">Sobre</p>
         <div class="container">
             <div id="img-sobre">
-                <img src="./assets/foto3.png" alt="">
+                <img src="./assets/foto02.jpg" alt="">
             </div>
             <div id="texto-sobre">
                 <h2>Diego Flausino</h2>
                 <span>Programador WEB</span><br><br>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus, libero magni tempore neque consequuntur tenetur facilis quasi fuga dolore fugit necessitatibus amet sint? Vero suscipit repellendus, quis velit atque natus?</p><br>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus, libero magni tempore neque consequuntur tenetur facilis quasi fuga dolore fugit necessitatibus amet sint? Vero suscipit repellendus, quis velit atque natus?</p><br>
+                <p>
+                    Olá meu nome é Diego. E ao longo da minha trajetória acadêmica, busquei sempre adquirir conhecimentos práticos para evoluir e me preparar para os desafios do mercado. Tenho experiência em estágios na área de desenvolvimento e suporte técnico, e acredito que a prática é essencial para me tornar um profissional completo.</p><br>
+                <p>Tenho conhecimentos em tecnologias como JavaScript, HTML, CSS, Bootstrap, TailwindCSS e Figma, e estou me aprofundando em React.js, TypeScript e Node.js. Estou sempre em busca de evolução, pronto para aplicar tudo o que aprendi e contribuir para soluções inovadoras na área de tecnologia.</p><br>
                 <a href="/assets/Currículo.pdf" download="Curriculo.pdf">
                     <button class="btn">
                         Download CV
@@ -130,6 +137,22 @@
                         <img src="/assets/skills/icon-git.png" alt="">
                         <p>GIT</p>
                     </div>
+                    <div class="img-skill">
+                        <img src="/assets/skills/icon-jquery.png" alt="">
+                        <p>jQuery</p>
+                    </div>
+                    <div class="img-skill">
+                        <img src="/assets/skills/icon-php.png" alt="">
+                        <p>PHP</p>
+                    </div>
+                    <div class="img-skill">
+                        <img src="/assets/skills/icon-c.png" alt="">
+                        <p>C</p>
+                    </div>
+                    <div class="img-skill">
+                        <img src="/assets/skills/icon-sql-.png" alt="">
+                        <p>SQL</p>
+                    </div>
                 </div>
                 <div class="skills-slide">
                     <div class="img-skill">
@@ -160,6 +183,22 @@
                         <img src="/assets/skills/icon-git.png" alt="">
                         <p>GIT</p>
                     </div>
+                    <div class="img-skill">
+                        <img src="/assets/skills/icon-jquery.png" alt="">
+                        <p>jQuery</p>
+                    </div>
+                    <div class="img-skill">
+                        <img src="/assets/skills/icon-php.png" alt="">
+                        <p>PHP</p>
+                    </div>
+                    <div class="img-skill">
+                        <img src="/assets/skills/icon-c.png" alt="">
+                        <p>C</p>
+                    </div>
+                    <div class="img-skill">
+                        <img src="/assets/skills/icon-sql-.png" alt="">
+                        <p>SQL</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -177,74 +216,74 @@
             <div id="projetos">
                 <div class="projetos">
                     <div class="img-projeto">
-                        <img src="./assets/projeto-01.png" width="350px" height="264px" alt="">
+                        <img src="./assets/Figma/figma01.png" width="350px" height="300px" alt="">
                         <div class="overlay">
                             <div class="overlay-infos">
                                 <span>2° semestre</span>
-                                <p class="titulo-projeto">Protótipo de aplicativo</p>
-                                <a href=""><i class="fa-solid fa-magnifying-glass-plus"></i></a>
+                                <p class="titulo-projeto">Protótipo de Sistema de Gestão Escolar (SIGA)</p>
+                                <a href="src/pages/Figma/index.html" id="ver"><i class="fa-solid fa-magnifying-glass-plus"></i></a>
                                 <a href=""><i class="fa-solid fa-link"></i></a>
                             </div>
                         </div>
                     </div>
                     <div class="img-projeto">
-                        <img src="./assets/projeto-02.png" width="350px" height="350px" alt="">
-                        <div class="overlay">
-                            <div class="overlay-infos">
-                                <span>3° semestre</span>
-                                <p class="titulo-projeto">Programa para Gestão de Biblioteca</p>
-                                <a href=""><i class="fa-solid fa-magnifying-glass-plus"></i></a>
-                                <a href=""><i class="fa-solid fa-link"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="projetos">
-                    <div class="img-projeto">
-                        <img src="./assets/projeto-03-banco-dados.png"  width="350px" height="197px" alt="">
-                        <div class="overlay">
-                            <div class="overlay-infos">
-                                <span>4° semestre</span>
-                                <p class="titulo-projeto">MER (Modelo Entidade Relacionamento)</p>
-                                <a href=""><i class="fa-solid fa-magnifying-glass-plus"></i></a>
-                                <a href=""><i class="fa-solid fa-link"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="img-projeto">
-                        <img src="./assets/projeto-03-mer.jpg"  width="350px" height="418px" alt="">
-                        <div class="overlay">
-                            <div class="overlay-infos">
-                                <span>4° semestre</span>
-                                <p class="titulo-projeto">Banco de Dados</p>
-                                <a href=""><i class="fa-solid fa-magnifying-glass-plus"></i></a>
-                                <a href=""><i class="fa-solid fa-link"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="projetos">
-                    <div class="img-projeto">
-                        <img src="./assets/projeto-04.png" width="350px" height="308px"  alt="">
+                        <img src="./assets/projeto04.png" width="350px" height="280px" alt="">
                         <div class="overlay">
                             <div class="overlay-infos">
                                 <span>5° semestre</span>
-                                <p class="titulo-projeto">Banco de Dados Não Relacional</p>
-                                <a href=""><i class="fa-solid fa-magnifying-glass-plus"></i></a>
+                                <p class="titulo-projeto">Maciel's Coffe</p>
+                                <a href="/src/pages/MacielsCoffe/index.html" id="ver1"><i class="fa-solid fa-magnifying-glass-plus"></i></a>
+                                <a href=""><i class="fa-solid fa-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="projetos">
+                    <div class="img-projeto">
+                        <img src="./assets/projeto-02.png"  width="350px" height="330px" alt="">
+                        <div class="overlay">
+                            <div class="overlay-infos">
+                                <span>3° semestre</span>
+                                <p class="titulo-projeto">Livraria em C</p>
+                                <a href="./src/pages/Livraria_C/index.html" id="ver2"><i class="fa-solid fa-magnifying-glass-plus"></i></a>
+                                <a href=""><i class="fa-solid fa-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img-projeto">
+                        <img src="./assets/projeto05.png"  width="350px" height="250px" alt="">
+                        <div class="overlay">
+                            <div class="overlay-infos">
+                                <span>6° semestre</span>
+                                <p class="titulo-projeto">CRUD</p>
+                                <a href="/src/pages/CRUD/index.html" id="ver3"><i class="fa-solid fa-magnifying-glass-plus"></i></a>
+                                <a href=""><i class="fa-solid fa-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="projetos">
+                    <div class="img-projeto">
+                        <img src="./assets/projeto03.png" width="350px" height="300px"  alt="">
+                        <div class="overlay">
+                            <div class="overlay-infos">
+                                <span>4° semestre</span>
+                                <p class="titulo-projeto">Circuito Arduino</p>
+                                <a href="/src/pages/Arduino/index.html" id="ver4"><i class="fa-solid fa-magnifying-glass-plus"></i></a>
                                 <a href=""><i class="fa-solid fa-link"></i></a>
                             </div>
                         </div>
                     </div>
 
                     <div class="img-projeto">
-                        <img src="./assets/projeto-05.png" width="350px" height="308px"  alt="">
+                        <img src="./assets/projeto06.png" width="350px" height="280px"  alt="">
                         <div class="overlay">
                             <div class="overlay-infos">
                                 <span>6° semestre</span>
-                                <p class="titulo-projeto">CRUD de Usuários</p>
-                                <a href=""><i class="fa-solid fa-magnifying-glass-plus"></i></a>
+                                <p class="titulo-projeto">Portfólio</p>
+                                <a href="#" id="ver5"><i class="fa-solid fa-magnifying-glass-plus"></i></a>
                                 <a href=""><i class="fa-solid fa-link"></i></a>
                             </div>
                         </div>
@@ -270,7 +309,7 @@
                     <p>(14) 99775-4810</p>
                 </div>
                 <div class="contato">
-                    <a href="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWrRrlqzStKQgjTdpLlQPDffCPmfLZmfPLbnVHLNqwMVRpGwPzFJMSTGfwzzTTlkPPvCHZbQB" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="mailto:diegocflausino@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
                     <p>diegocflausino@gmail.com</p>
                 </div>
                 <div class="borda"></div>
@@ -280,8 +319,8 @@
                 <div class="redes">
                     <a href="https://github.com/diegoflausino45" target="_blank"><i class="fa-brands fa-github-alt"></i></a>
                     <a href="https://www.linkedin.com/in/diego-flausino/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/diegovinicius.consentinoflausino?locale=pt_BR" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/diego_flausino/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
                 </div>
             </div>
 
@@ -296,5 +335,7 @@
 
 
     <script src="./js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
 </body>
 </html>
